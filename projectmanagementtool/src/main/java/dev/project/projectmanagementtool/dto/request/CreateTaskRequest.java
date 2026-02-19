@@ -1,6 +1,7 @@
 package dev.project.projectmanagementtool.dto.request;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
@@ -17,7 +18,7 @@ public class CreateTaskRequest {
 
     private Long projectId;
 
-    private Long userId;
+    List<Long> userIds;
 
     private LocalDateTime startDate;
 
